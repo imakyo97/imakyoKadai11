@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SelectViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class SelectViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     static func instantiate() -> SelectViewController? {
         guard let selectViewController
                 = UIStoryboard.init(name: "Second", bundle: nil)
@@ -15,7 +15,7 @@ class SelectViewController: UIViewController,UITableViewDataSource,UITableViewDe
                 as? SelectViewController else { return nil }
         return selectViewController
     }
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     static var prefecture: String?
     private let prefectures = [
         "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県",
@@ -27,6 +27,7 @@ class SelectViewController: UIViewController,UITableViewDataSource,UITableViewDe
         "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県",
         "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
     ]
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self

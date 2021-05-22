@@ -8,10 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var label2: UILabel!
+    private var label2: UILabel!
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        //label1を作成
+        // label1を作成
         let label1  = UILabel()
         label1.frame = CGRect(x: 0, y: 0, width: 90, height: 30)
         label1.text = "都道府県"
@@ -20,7 +21,7 @@ class ViewController: UIViewController {
         view.addSubview(label1)
         label1.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50).isActive = true
         label1.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
-        //label2を作成
+        // label2を作成
         label2 = UILabel()
         label2.frame = CGRect(x: 0, y: 0, width: 90, height: 30)
         label2.text = "未選択"
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
         view.addSubview(label2)
         label2.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         label2.topAnchor.constraint(equalTo: view.topAnchor, constant: 90).isActive = true
-        //buttonを作成
+        // buttonを作成
         let button = UIButton()
         button.frame = CGRect(x: 0, y: 0, width: 50, height: 30)
         button.setTitle("選択", for: .normal)
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
         view.rightAnchor.constraint(equalTo: button.rightAnchor, constant: 50).isActive = true
         button.topAnchor.constraint(equalTo: view.topAnchor, constant: 85).isActive = true
     }
+    // MARK: - viewWillApper
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let prefecture = SelectViewController.prefecture {

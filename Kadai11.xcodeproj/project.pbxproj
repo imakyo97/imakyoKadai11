@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4781869B2658E19600E44CEF /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4781869A2658E19600E44CEF /* Second.storyboard */; };
 		478A61C7265692E0009C4C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A61C6265692E0009C4C90 /* AppDelegate.swift */; };
 		478A61C9265692E0009C4C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A61C8265692E0009C4C90 /* SceneDelegate.swift */; };
 		478A61CB265692E0009C4C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A61CA265692E0009C4C90 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4781869A2658E19600E44CEF /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		478A61C3265692E0009C4C90 /* Kadai11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kadai11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		478A61C6265692E0009C4C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		478A61C8265692E0009C4C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				478A61CA265692E0009C4C90 /* ViewController.swift */,
 				478A61DC26569502009C4C90 /* SelectViewController.swift */,
 				478A61CC265692E0009C4C90 /* Main.storyboard */,
+				4781869A2658E19600E44CEF /* Second.storyboard */,
 				478A61CF265692E1009C4C90 /* Assets.xcassets */,
 				478A61D1265692E1009C4C90 /* LaunchScreen.storyboard */,
 				478A61D4265692E1009C4C90 /* Info.plist */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4781869B2658E19600E44CEF /* Second.storyboard in Resources */,
 				478A61D3265692E1009C4C90 /* LaunchScreen.storyboard in Resources */,
 				478A61D0265692E1009C4C90 /* Assets.xcassets in Resources */,
 				478A61CE265692E0009C4C90 /* Main.storyboard in Resources */,

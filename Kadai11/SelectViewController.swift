@@ -8,15 +8,18 @@
 import UIKit
 
 class SelectViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    static func instantiate() -> SelectViewController? {
-        guard let selectViewController
-                = UIStoryboard.init(name: "Second", bundle: nil)
-                .instantiateInitialViewController()
-                as? SelectViewController else { return nil }
+    private var didSelectHandler: (String) -> Void = { _ in }
+
+    static func instantiate(didSelect: @escaping (String) -> Void) -> SelectViewController {
+
+        let storyboard = UIStoryboard(name: "Second", bundle: nil)
+        // swiftlint:disable:next force_cast
+        let selectViewController = storyboard.instantiateInitialViewController() as! SelectViewController
+        selectViewController.didSelectHandler = didSelect
         return selectViewController
     }
+
     @IBOutlet private weak var tableView: UITableView!
-    static var prefecture: String?
     private let prefectures = [
         "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県",
         "福島県", "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県",
@@ -27,27 +30,32 @@ class SelectViewController: UIViewController, UITableViewDataSource, UITableView
         "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県",
         "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
     ]
+
     // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
     }
+
     @IBAction private func didTapCancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+
     // MARK: - tableViewDateSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         prefectures.count
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = prefectures[indexPath.row]
         return cell
     }
+
     // MARK: - tableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Self.prefecture = prefectures[indexPath.row]
+        didSelectHandler(prefectures[indexPath.row])
         dismiss(animated: true, completion: nil)
     }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		4786DDBF26D3705C00409285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDBD26D3705C00409285 /* Main.storyboard */; };
 		4786DDC126D3705D00409285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDC026D3705D00409285 /* Assets.xcassets */; };
 		4786DDC426D3705D00409285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDC226D3705D00409285 /* LaunchScreen.storyboard */; };
+		4786DDCF26D372E700409285 /* Prefecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDCE26D372E700409285 /* Prefecture.storyboard */; };
+		4786DDD126D3738400409285 /* PrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DDD026D3738400409285 /* PrefectureViewController.swift */; };
+		4786DDD326D3746300409285 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DDD226D3746300409285 /* Prefecture.swift */; };
+		4786DDD526D375C400409285 /* PrefectureItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DDD426D375C400409285 /* PrefectureItems.swift */; };
+		4786DDD726D3774200409285 /* PrefectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DDD626D3774200409285 /* PrefectureViewModel.swift */; };
+		4786DDD926D37D4F00409285 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DDD826D37D4F00409285 /* ViewModel.swift */; };
+		4786DDDF26D3830F00409285 /* PrefectureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DDDD26D3830F00409285 /* PrefectureTableViewCell.swift */; };
+		4786DDE026D3830F00409285 /* PrefectureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDDE26D3830F00409285 /* PrefectureTableViewCell.xib */; };
+		4786DDE326D388BD00409285 /* PrefectureDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786DDE226D388BD00409285 /* PrefectureDataSource.swift */; };
 		649AE6B289949C46258C9ACD /* Pods_Kadai11_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41E7F131FEAD7EE6D4B598 /* Pods_Kadai11_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +34,15 @@
 		4786DDC026D3705D00409285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4786DDC326D3705D00409285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4786DDC526D3705D00409285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4786DDCE26D372E700409285 /* Prefecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prefecture.storyboard; sourceTree = "<group>"; };
+		4786DDD026D3738400409285 /* PrefectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureViewController.swift; sourceTree = "<group>"; };
+		4786DDD226D3746300409285 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
+		4786DDD426D375C400409285 /* PrefectureItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureItems.swift; sourceTree = "<group>"; };
+		4786DDD626D3774200409285 /* PrefectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureViewModel.swift; sourceTree = "<group>"; };
+		4786DDD826D37D4F00409285 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4786DDDD26D3830F00409285 /* PrefectureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureTableViewCell.swift; sourceTree = "<group>"; };
+		4786DDDE26D3830F00409285 /* PrefectureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrefectureTableViewCell.xib; sourceTree = "<group>"; };
+		4786DDE226D388BD00409285 /* PrefectureDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureDataSource.swift; sourceTree = "<group>"; };
 		77D4322EEF428C941E0037FB /* Pods-Kadai11-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai11-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Kadai11-MVVM/Pods-Kadai11-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		CC0BA08AC598F9076C2B1616 /* Pods-Kadai11-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai11-MVVM.release.xcconfig"; path = "Target Support Files/Pods-Kadai11-MVVM/Pods-Kadai11-MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		EC41E7F131FEAD7EE6D4B598 /* Pods_Kadai11_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kadai11_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,15 +81,80 @@
 		4786DDB626D3705C00409285 /* Kadai11-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				4786DDCD26D372CA00409285 /* Model */,
+				4786DDCC26D372C300409285 /* ViewModel */,
+				4786DDCB26D372B400409285 /* View */,
 				4786DDB726D3705C00409285 /* AppDelegate.swift */,
 				4786DDB926D3705C00409285 /* SceneDelegate.swift */,
-				4786DDBB26D3705C00409285 /* ViewController.swift */,
-				4786DDBD26D3705C00409285 /* Main.storyboard */,
 				4786DDC026D3705D00409285 /* Assets.xcassets */,
 				4786DDC226D3705D00409285 /* LaunchScreen.storyboard */,
 				4786DDC526D3705D00409285 /* Info.plist */,
 			);
 			path = "Kadai11-MVVM";
+			sourceTree = "<group>";
+		};
+		4786DDCB26D372B400409285 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4786DDE126D3889F00409285 /* DataSource */,
+				4786DDDC26D382DE00409285 /* StoryBoard */,
+				4786DDDB26D382D600409285 /* Controller */,
+				4786DDDA26D382CD00409285 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4786DDCC26D372C300409285 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4786DDD626D3774200409285 /* PrefectureViewModel.swift */,
+				4786DDD826D37D4F00409285 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4786DDCD26D372CA00409285 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4786DDD226D3746300409285 /* Prefecture.swift */,
+				4786DDD426D375C400409285 /* PrefectureItems.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4786DDDA26D382CD00409285 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4786DDDD26D3830F00409285 /* PrefectureTableViewCell.swift */,
+				4786DDDE26D3830F00409285 /* PrefectureTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4786DDDB26D382D600409285 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4786DDBB26D3705C00409285 /* ViewController.swift */,
+				4786DDD026D3738400409285 /* PrefectureViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4786DDDC26D382DE00409285 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4786DDBD26D3705C00409285 /* Main.storyboard */,
+				4786DDCE26D372E700409285 /* Prefecture.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		4786DDE126D3889F00409285 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4786DDE226D388BD00409285 /* PrefectureDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		E2B7F618429DBD1FD009B482 /* Pods */ = {
@@ -80,7 +163,6 @@
 				77D4322EEF428C941E0037FB /* Pods-Kadai11-MVVM.debug.xcconfig */,
 				CC0BA08AC598F9076C2B1616 /* Pods-Kadai11-MVVM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4786DDC426D3705D00409285 /* LaunchScreen.storyboard in Resources */,
+				4786DDCF26D372E700409285 /* Prefecture.storyboard in Resources */,
+				4786DDE026D3830F00409285 /* PrefectureTableViewCell.xib in Resources */,
 				4786DDC126D3705D00409285 /* Assets.xcassets in Resources */,
 				4786DDBF26D3705C00409285 /* Main.storyboard in Resources */,
 			);
@@ -206,9 +290,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4786DDD726D3774200409285 /* PrefectureViewModel.swift in Sources */,
+				4786DDDF26D3830F00409285 /* PrefectureTableViewCell.swift in Sources */,
 				4786DDBC26D3705C00409285 /* ViewController.swift in Sources */,
+				4786DDD126D3738400409285 /* PrefectureViewController.swift in Sources */,
+				4786DDD326D3746300409285 /* Prefecture.swift in Sources */,
 				4786DDB826D3705C00409285 /* AppDelegate.swift in Sources */,
 				4786DDBA26D3705C00409285 /* SceneDelegate.swift in Sources */,
+				4786DDE326D388BD00409285 /* PrefectureDataSource.swift in Sources */,
+				4786DDD926D37D4F00409285 /* ViewModel.swift in Sources */,
+				4786DDD526D375C400409285 /* PrefectureItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyohei.Kadai11-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyohei.Kadai11-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

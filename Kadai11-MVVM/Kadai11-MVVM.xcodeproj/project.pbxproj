@@ -13,6 +13,7 @@
 		4786DDBF26D3705C00409285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDBD26D3705C00409285 /* Main.storyboard */; };
 		4786DDC126D3705D00409285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDC026D3705D00409285 /* Assets.xcassets */; };
 		4786DDC426D3705D00409285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4786DDC226D3705D00409285 /* LaunchScreen.storyboard */; };
+		649AE6B289949C46258C9ACD /* Pods_Kadai11_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41E7F131FEAD7EE6D4B598 /* Pods_Kadai11_MVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		4786DDC026D3705D00409285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4786DDC326D3705D00409285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4786DDC526D3705D00409285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D4322EEF428C941E0037FB /* Pods-Kadai11-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai11-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-Kadai11-MVVM/Pods-Kadai11-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0BA08AC598F9076C2B1616 /* Pods-Kadai11-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kadai11-MVVM.release.xcconfig"; path = "Target Support Files/Pods-Kadai11-MVVM/Pods-Kadai11-MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		EC41E7F131FEAD7EE6D4B598 /* Pods_Kadai11_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kadai11_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649AE6B289949C46258C9ACD /* Pods_Kadai11_MVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4786DDB626D3705C00409285 /* Kadai11-MVVM */,
 				4786DDB526D3705C00409285 /* Products */,
+				E2B7F618429DBD1FD009B482 /* Pods */,
+				EDE54119C0F88C79E7F3EC16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Kadai11-MVVM";
 			sourceTree = "<group>";
 		};
+		E2B7F618429DBD1FD009B482 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D4322EEF428C941E0037FB /* Pods-Kadai11-MVVM.debug.xcconfig */,
+				CC0BA08AC598F9076C2B1616 /* Pods-Kadai11-MVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDE54119C0F88C79E7F3EC16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC41E7F131FEAD7EE6D4B598 /* Pods_Kadai11_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4786DDC826D3705D00409285 /* Build configuration list for PBXNativeTarget "Kadai11-MVVM" */;
 			buildPhases = (
+				C1C02BC329012C240F434257 /* [CP] Check Pods Manifest.lock */,
 				4786DDB026D3705C00409285 /* Sources */,
 				4786DDB126D3705C00409285 /* Frameworks */,
 				4786DDB226D3705C00409285 /* Resources */,
+				5AF276542774C5E09C098AA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AF276542774C5E09C098AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kadai11-MVVM/Pods-Kadai11-MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kadai11-MVVM/Pods-Kadai11-MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kadai11-MVVM/Pods-Kadai11-MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C02BC329012C240F434257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kadai11-MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4786DDB026D3705C00409285 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		4786DDC926D3705D00409285 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D4322EEF428C941E0037FB /* Pods-Kadai11-MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		4786DDCA26D3705D00409285 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0BA08AC598F9076C2B1616 /* Pods-Kadai11-MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

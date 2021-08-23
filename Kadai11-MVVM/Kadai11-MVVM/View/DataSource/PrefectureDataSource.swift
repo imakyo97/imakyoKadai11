@@ -9,11 +9,11 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-final class PrefectureDataSource:NSObject, UITableViewDataSource, RxTableViewDataSourceType {
+final class PrefectureDataSource: NSObject, UITableViewDataSource, RxTableViewDataSourceType {
 
     typealias Element = [PrefectureItems]
 
-    var prefectureItems: [PrefectureItems] = []
+    var prefectureItems: Element = []
 
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
